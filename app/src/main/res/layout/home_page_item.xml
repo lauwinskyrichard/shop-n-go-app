@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:padding="10dp"
+    android:id="@+id/homepage_cv"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/prod_image_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/lg001"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:cropToPadding="true" />
+
+        <TextView
+            android:id="@+id/prod_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prod_image_iv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="fwefwefewfew"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/prod_rate_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prod_image_iv"
+            android:layout_below="@id/prod_name_txt"
+            android:layout_margin="5dp"
+            android:text="fwefwefewfew"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/prod_price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prod_image_iv"
+            android:layout_below="@id/prod_rate_txt"
+            android:layout_margin="5dp"
+            android:text="fwefwefewfew"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/cart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Add to Cart"
+            android:textSize="10dp"
+            android:background="@drawable/edit_text_border"
+            android:textColor="@color/black"
+            android:layout_below="@id/prod_price_txt"
+            android:layout_toRightOf="@id/prod_image_iv">
+        </Button>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

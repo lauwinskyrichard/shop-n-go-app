@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout_Page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="#00FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_home_32"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="15dp"
+            android:text="CHECKOUT"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/back_btn"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/checkout_page_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"/>
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="SUBTOTAL:"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:layout_below="@id/checkout_page_cv"/>
+
+        <TextView
+            android:id="@+id/subtotal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:text="0000000"
+            android:textStyle="italic"
+            android:layout_below="@id/checkout_page_cv"
+            android:layout_alignParentRight="true"
+            android:textAlignment="textEnd"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/checkout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="CHECKOUT"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@id/sub"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_border"/>
+
+    </RelativeLayout>
+
+</ScrollView>
